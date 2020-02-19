@@ -68,11 +68,18 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
     // Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe.
     //console.log(document.getElementsByClassName("main-content")[0].style.background="green");
-    function mudarCorQuadrado(elemento, posicao, cor) {
+    function mudarCorQuadradoPrincipal(elemento, posicao, cor) {
       document.getElementsByClassName(elemento)[posicao].style.background = cor
-      console.log("True", "cor do quadrado alterada")
+      console.log("True", "cor do quadrado principal alterada")
     }
-    mudarCorQuadrado("main-content", 0, "green");
+    mudarCorQuadradoPrincipal("main-content", 0, "green");
+
+    // Crie uma função que mude a cor do quadrado vermelho para branco.
+    function mudarCorQuadradoCentral(elemento, posicao, cor) {
+      document.getElementsByClassName(elemento)[posicao].style.background = cor
+      console.log("True", "cor do quadrado central alterada")
+    }
+    mudarCorQuadradoCentral("center-content", 0, "white");
 
   </script>
 </body>
