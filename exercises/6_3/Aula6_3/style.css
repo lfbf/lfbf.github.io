@@ -1,0 +1,39 @@
+* {
+  /* border: 1px solid red; */
+}
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ----- container 1 -------*/
+
+.flex-container {
+  border: 3px solid #333;
+  width: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+}
+
+.box {
+  background: orange;
+  border: 2px solid grey;
+  padding: 0 40px;
+  border-radius: 5px;
+}
+
+/* ------- container 2 -------- */
+
+.flex-container:nth-child(2) > .box {
+  background: #bdaaf0;
+  height: 60px;
+}
+
+.flex-container:nth-child(2) {
+  height: 400px;
+  /* justify-content: center; */
+  flex-direction: row;
+  align-items: center;
+}
