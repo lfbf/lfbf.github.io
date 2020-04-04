@@ -29,4 +29,8 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Diretorio do node modules
+
+#10_1/node_modules/
+
 # End of https://www.gitignore.io/api/macos
