@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulário de Currículo</title>
+</head>
+
+<body>
+  <h1>Formulário de Currículo</h1>
+
+  <div>
+    <fieldset>
+      <p>Dados pessoais:</p>
+      <form action="" method="">
+        <label for="">Nome</label>
+        <input type="text" required:"required" name="nome" id="nome" maxlength="40">
+        <br>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" maxlength="50">
+        <label for="">CPF</label>
+        <input type="text" required="required" name="cpf" id="cpf" maxlength="11">
+        <label for="">Endereço</label>
+        <input type="text" required="required" name="endereco" id="endereco" maxlength="200">
+        <label for="">Cidade</label>
+        <input type="text" required="required" name="cidade" id="cidade" maxlength="28">
+        <label for="">Cidade</label>
+        <select name="cidade" required="required" id="cidade">
+          <option value="1">Florianópolis</option>
+          <option value="2">Blumenau</option>
+          <option value="3">São Joaquim</option>
+        </select>
+        <p>Selecione o tipo de moradia:</p>
+        <input type="radio" name="tipo" id="casa" value="Casa">
+        <label for="casa">Casa</label><br>
+        <input type="radio" name="tipo" id="apartamento" value="Apartamento">
+        <label for="apartamento">Apartamento</label>
+      </form>
+    </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+      <form action="" method="">
+        <p>Dados do seu último emprego</p>
+        <label for="resumo">Resumo do Currículo</label>
+        <textarea name="resumocurriculo" id="resumo" required="required" cols="100" rows="10" maxlength="1000">
+        </textarea>
+        <br>
+        <label for="cargo">Cargo</label>
+        <input type="text" name="cargodapessoa" required="required" id="cargo" maxlength="40">
+        <br>
+        <label for="">Descrição do cargo</label>
+        <input type="text" name="descricaocargo" id="descricao" required="required" maxlength="500">
+        <br>
+        <label for="">Data de início</label>
+        <input type="text" name="datadeinicio" required="required " id="data">
+      </form>
+    </fieldset>
+  </div>
+
+</body>
+
+</html>
